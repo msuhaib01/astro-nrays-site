@@ -2,12 +2,14 @@
 import Layout from "../layouts/Layout.astro";
 import Nav from "../components/Nav.astro";
 import BlogLinks from "../components/BlogLinks.astro";
+
+const pageTitle = "Blog Page";
 ---
 
 <Layout title="Welcome to Astro.">
   <main class="text-slate-300">
     <Nav />
-    <h1>Blog Page</h1>
+    <h1>{pageTitle}</h1>
     <BlogLinks />
   </main>
 </Layout>
