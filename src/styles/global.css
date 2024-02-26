@@ -30,7 +30,6 @@ code {
 .nav-links {
   width: 100%;
   top: 5rem;
-  left: 48px;
   background-color: #ff9776;
   display: none;
   margin: 0;
@@ -54,10 +53,13 @@ code {
 .expanded {
   display: unset;
 }
+h1 {
+  color: purple;
+  font-size: 4rem;
+}
 
 @media screen and (min-width: 636px) {
   .nav-links {
-    margin-left: 5em;
     display: block;
     position: static;
     width: auto;

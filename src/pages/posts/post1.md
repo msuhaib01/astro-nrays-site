@@ -28,6 +28,7 @@ Welcome to my _new blog_ about learning Astro! Here, I will share my learning jo
 
 I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
 
+<!--
 <style>
   h1 {
     color: blue;
@@ -35,4 +36,4 @@ I will finish the Astro tutorial, and then keep adding more posts. Watch this sp
   p {
     color: red;
   }
-</style>
+</style> -->
