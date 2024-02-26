@@ -1,7 +1,7 @@
 ---
 import Header from "../components/Header.astro";
 import "../styles/global.css";
-
+import Layout from "../layouts/Layout.astro";
 const pageTitle = "About Me";
 const identity = {
   firstName: "Sarah",
@@ -20,25 +20,8 @@ const fontWeight = "800";
 const textCase = "uppercase";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>{pageTitle}</title>
-    <style define:vars={{ skillColor, fontWeight, textCase }}>
-      h1 {
-        color: purple;
-        font-size: 4rem;
-      }
-      .skill {
-        color: var(--skillColor);
-        font-weight: var(--fontWeight);
-        text-transform: var(--textCase);
-      }
-    </style>
-  </head>
-  <body>
-    <Header />
+<Layout title="pageTitle">
+  <main>
     <h1>{pageTitle}</h1>
 
     <h2>... and my new Astro site!</h2>
@@ -83,8 +66,20 @@ const textCase = "uppercase";
         <p>My goal is not 3 days.</p>
       )
     }
-  </body>
-</html>
+  </main>
+</Layout>
+
+<style define:vars={{ skillColor, fontWeight, textCase }}>
+  h1 {
+    color: purple;
+    font-size: 4rem;
+  }
+  .skill {
+    color: var(--skillColor);
+    font-weight: var(--fontWeight);
+    text-transform: var(--textCase);
+  }
+</style>
 
 <!-- ---
 import Layout from "../layouts/Layout.astro";
