@@ -1,0 +1,23 @@
+---
+import Layout from "./Layout.astro";
+const { frontmatter } = Astro.props;
+---
+
+<Layout title="frontmatter.title">
+  <h1>{frontmatter.title}</h1>
+  <p>Written by {frontmatter.author}</p>
+  <slot />
+</Layout>
+
+<!-- NEED TO SEE IF is:global applied to this layout only applies on mfs who use this as a coat. -->
+<!-- <style is:global>
+  .test {
+    color: green;
+  }
+  h1 {
+    color: red;
+  }
+  p {
+    color: blue;
+  }
+</style> -->
